@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeuroLens AI</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+    :root {
+      --bg: #0a0c10;
+      --surface: #111318;
+      --surface2: #1a1d24;
+      --border: #2a2d36;
+      --text: #e8eaf0;
+      --muted: #6b7280;
+      --green: #22c55e;
+      --yellow: #f59e0b;
+      --red: #ef4444;
+      --accent: #6366f1;
+      --mono: 'Space Mono', monospace;
+      --sans: 'DM Sans', sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      width: 340px;
+      min-height: 420px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 13px;
+      overflow: hidden;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 16px 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo-icon {
+      width: 24px;
+      height: 24px;
+      background: var(--accent);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+    }
+
+    .logo-text {
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--text);
+    }
+
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--green);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    /* Score Ring */
+    .score-section {
+      padding: 20px 16px 16px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .ring-container {
+      position: relative;
+      width: 90px;
+      height: 90px;
+      flex-shrink: 0;
+    }
+
+    .ring-svg {
+      transform: rotate(-90deg);
+    }
+
+    .ring-bg {
+      fill: none;
+      stroke: var(--surface2);
+      stroke-width: 6;
+    }
+
+    .ring-fill {
+      fill: none;
+      stroke-width: 6;
+      stroke-linecap: round;
+      stroke-dasharray: 220;
+      stroke-dashoffset: 220;
+      transition: stroke-dashoffset 0.8s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.4s;
+    }
+
+    .ring-score {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: var(--mono);
+      font-size: 22px;
+      font-weight: 700;
+      text-align: center;
+      line-height: 1;
+    }
+
+    .ring-label {
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 8px;
+      font-family: var(--mono);
+      color: var(--muted);
+      letter-spacing: 0.1em;
+      white-space: nowrap;
+    }
+
+    .score-info {
+      flex: 1;
+    }
+
+    .level-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 3px 9px;
+      border-radius: 20px;
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin-bottom: 8px;
+    }
+
+    .level-badge.NORMAL     { background: rgba(34,197,94,0.12);  color: var(--green);  border: 1px solid rgba(34,197,94,0.25);  }
+    .level-badge.ELEVATED   { background: rgba(245,158,11,0.12); color: var(--yellow); border: 1px solid rgba(245,158,11,0.25); }
+    .level-badge.HIGH       { background: rgba(239,68,68,0.12);  color: var(--red);    border: 1px solid rgba(239,68,68,0.25);  }
+    .level-badge.DEEP_FOCUS { background: rgba(99,102,241,0.15); color: var(--accent); border: 1px solid rgba(99,102,241,0.3);  }
+    .level-badge.INACTIVE   { background: rgba(107,114,128,0.12);color: var(--muted);  border: 1px solid rgba(107,114,128,0.25);}
+
+    .coach-msg {
+      font-size: 11.5px;
+      color: var(--text);
+      line-height: 1.5;
+      opacity: 0.9;
+    }
+
+    /* Mini Metrics Grid */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      padding: 0 16px 14px;
+    }
+
+    .metric-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 12px;
+    }
+
+    .metric-label {
+      font-size: 10px;
+      color: var(--muted);
+      font-family: var(--mono);
+      letter-spacing: 0.05em;
+      margin-bottom: 4px;
+    }
+
+    .metric-value {
+      font-family: var(--mono);
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .metric-unit {
+      font-size: 9px;
+      color: var(--muted);
+      margin-left: 2px;
+    }
+
+    /* Sparkline */
+    .sparkline-section {
+      padding: 0 16px 14px;
+    }
+
+    .section-label {
+      font-size: 10px;
+      font-family: var(--mono);
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+    }
+
+    .sparkline-wrap {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 8px;
+      height: 56px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    canvas#sparkline {
+      width: 100%;
+      height: 100%;
+    }
+
+    .no-data {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      color: var(--muted);
+      font-size: 11px;
+      font-family: var(--mono);
+    }
+
+    /* Footer */
+    .footer {
+      padding: 10px 16px 14px;
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn {
+      flex: 1;
+      padding: 8px;
+      border-radius: 7px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      transition: all 0.15s;
+      text-align: center;
+    }
+
+    .btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .btn.primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
+    }
+
+    .btn.primary:hover {
+      opacity: 0.85;
+    }
+
+    /* Last updated */
+    .last-updated {
+      text-align: center;
+      font-size: 9px;
+      font-family: var(--mono);
+      color: var(--muted);
+      padding-bottom: 4px;
+    }
+
+    .offline-note {
+      background: rgba(245,158,11,0.08);
+      border: 1px solid rgba(245,158,11,0.2);
+      color: var(--yellow);
+      font-size: 10px;
+      font-family: var(--mono);
+      padding: 6px 12px;
+      margin: 0 16px 10px;
+      border-radius: 6px;
+      text-align: center;
+      display: none;
+    }
+
+    .offline-note.visible { display: block; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">
+      <div class="logo-icon">🧠</div>
+      <span class="logo-text">NEUROLENS AI</span>
+    </div>
+    <div class="status-dot" id="statusDot"></div>
+  </div>
+
+  <!-- Score Ring + Coach -->
+  <div class="score-section">
+    <div class="ring-container">
+      <svg class="ring-svg" width="90" height="90" viewBox="0 0 90 90">
+        <circle class="ring-bg" cx="45" cy="45" r="35" />
+        <circle class="ring-fill" id="ringFill" cx="45" cy="45" r="35" />
+      </svg>
+      <div class="ring-score" id="scoreNum">—</div>
+      <div class="ring-label">FATIGUE</div>
+    </div>
+
+    <div class="score-info">
+      <div class="level-badge INACTIVE" id="levelBadge">⬤ LOADING</div>
+      <div class="coach-msg" id="coachMsg">Initialising cognitive monitor…</div>
+    </div>
+  </div>
+
+  <!-- Metrics -->
+  <div class="metrics-grid">
+    <div class="metric-card">
+      <div class="metric-label">TYPING SPEED</div>
+      <div class="metric-value" id="mSpeed">—<span class="metric-unit">cpm</span></div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">ERROR RATE</div>
+      <div class="metric-value" id="mError">—<span class="metric-unit">%</span></div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">AVG LATENCY</div>
+      <div class="metric-value" id="mLatency">—<span class="metric-unit">ms</span></div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">TAB SWITCHES</div>
+      <div class="metric-value" id="mTabs">—</div>
+    </div>
+  </div>
+
+  <!-- Offline notice -->
+  <div class="offline-note" id="offlineNote">⚡ Backend offline — local scoring active</div>
+
+  <!-- Sparkline -->
+  <div class="sparkline-section">
+    <div class="section-label">LAST 30 MIN — FATIGUE TREND</div>
+    <div class="sparkline-wrap">
+      <canvas id="sparkline"></canvas>
+      <div class="no-data" id="noData">Start typing to begin monitoring</div>
+    </div>
+  </div>
+
+  <!-- Companion -->
+  <div class="sparkline-section">
+    <div class="section-label">COMPANION CHAT</div>
+    <div class="sparkline-wrap" style="height:auto; min-height:84px;">
+      <div id="chatSummary" class="no-data" style="display:flex; justify-content:flex-start; text-align:left;">
+        Your companion messages will appear here.
+      </div>
+      <div id="chatQuickRow" style="display:none; margin-top:8px; gap:6px; flex-wrap:wrap;"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="last-updated" id="lastUpdated">Waiting for data…</div>
+  <div class="footer">
+    <button class="btn" id="btnReset">RESET</button>
+    <button class="btn primary" id="btnDashboard">OPEN DASHBOARD →</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,492 @@
+﻿venv\Scripts\python.exe : 
+Traceback (most recent 
+call last):
+At line:1 char:32
++ ... NG="utf-8"; 
+venv\Scripts\python.exe 
+-c "from ml.train import 
+main; ma ...
++                 ~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (T  
+  raceback (most recent   
+  call last)::String)     
+[], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+  File "C:\Users\bhumeshjy
+othi\Desktop\neurolens ai\
+venv\Lib\site-packages\job
+lib\externals\loky\backend
+\resource_tracker.py", 
+line 297, in main
+    raise ValueError(
+    ...<4 lines>...
+    )
+ValueError: Cannot 
+register "REGISTER","rtype
+":"folder","base64_name" 
+for automatic cleanup: 
+unknown resource type ("Qz
+pcVXNlcnNcQkhVTUVTfjFcQXBw
+RGF0YVxMb2NhbFxUZW1wXGpvYm
+xpYl9tZW1tYXBwaW5nX2ZvbGRl
+cl8yMzUyMF81OTFlNDNmMWNlM2
+U0ZGY3YmEwZmI1YWQ5ZjI5ZDg4
+Y184MzAzOThlOTQ4MDA0NjU4YW
+IwZTkwMzI2Zjc1MWJhMA=="}).
+ Resource type should be 
+one of the following: 
+['noop', 'folder', 'file']
+Traceback (most recent 
+call last):
+  File "C:\Users\bhumeshjy
+othi\Desktop\neurolens ai\
+venv\Lib\site-packages\job
+lib\externals\loky\backend
+\resource_tracker.py", 
+line 297, in main
+    raise ValueError(
+    ...<4 lines>...
+    )
+ValueError: Cannot 
+register "REGISTER","rtype
+":"folder","base64_name" 
+for automatic cleanup: 
+unknown resource type ("Qz
+pcVXNlcnNcQkhVTUVTfjFcQXBw
+RGF0YVxMb2NhbFxUZW1wXGpvYm
+xpYl9tZW1tYXBwaW5nX2ZvbGRl
+cl8yMzUyMF81OTFlNDNmMWNlM2
+U0ZGY3YmEwZmI1YWQ5ZjI5ZDg4
+Y183ZGI3YTBhYjc3ZjA0MDY5OD
+k5YjUwMzJlMjY0ZjZlNg=="}).
+ Resource type should be 
+one of the following: 
+['noop', 'folder', 'file']
+Traceback (most recent 
+call last):
+  File "C:\Users\bhumeshjy
+othi\Desktop\neurolens ai\
+venv\Lib\site-packages\job
+lib\externals\loky\backend
+\resource_tracker.py", 
+line 297, in main
+    raise ValueError(
+    ...<4 lines>...
+    )
+ValueError: Cannot 
+register "REGISTER","rtype
+":"folder","base64_name" 
+for automatic cleanup: 
+unknown resource type ("Qz
+pcVXNlcnNcQkhVTUVTfjFcQXBw
+RGF0YVxMb2NhbFxUZW1wXGpvYm
+xpYl9tZW1tYXBwaW5nX2ZvbGRl
+cl8yMzUyMF9mZDk3NGYxNGNhMj
+U0YzJlYTMzNWNlYzIxYjI0MTNi
+Nl84ZDI0OTEwYTZlYWI0MGUyYj
+Q2NjNiOGU2MzdlZDVmOQ=="}).
+ Resource type should be 
+one of the following: 
+['noop', 'folder', 'file']
+Traceback (most recent 
+call last):
+  File "C:\Users\bhumeshjy
+othi\Desktop\neurolens ai\
+venv\Lib\site-packages\job
+lib\externals\loky\backend
+\resource_tracker.py", 
+line 297, in main
+    raise ValueError(
+    ...<4 lines>...
+    )
+ValueError: Cannot 
+register "REGISTER","rtype
+":"folder","base64_name" 
+for automatic cleanup: 
+unknown resource type ("Qz
+pcVXNlcnNcQkhVTUVTfjFcQXBw
+RGF0YVxMb2NhbFxUZW1wXGpvYm
+xpYl9tZW1tYXBwaW5nX2ZvbGRl
+cl8yMzUyMF81OTFlNDNmMWNlM2
+U0ZGY3YmEwZmI1YWQ5ZjI5ZDg4
+Y19kYjM1YjM4ZTYyNzQ0N2Y1OT
+ExNjhkZDFiYjY3ZGEzNg=="}).
+ Resource type should be 
+one of the following: 
+['noop', 'folder', 'file']
+Traceback (most recent 
+call last):
+  File "C:\Users\bhumeshjy
+othi\Desktop\neurolens ai\
+venv\Lib\site-packages\job
+lib\externals\loky\backend
+\resource_tracker.py", 
+line 297, in main
+    raise ValueError(
+    ...<4 lines>...
+    )
+ValueError: Cannot 
+register "REGISTER","rtype
+":"folder","base64_name" 
+for automatic cleanup: 
+unknown resource type ("Qz
+pcVXNlcnNcQkhVTUVTfjFcQXBw
+RGF0YVxMb2NhbFxUZW1wXGpvYm
+xpYl9tZW1tYXBwaW5nX2ZvbGRl
+cl8yMzUyMF9iMTUyOTUxNjM1Nj
+c0NDczODI0MTg0NTEyNmQzMDQz
+Yl81NWRjMGVjZWFlNzM0YmI0Yj
+djOGU5ZTA4N2IxNDFjYg=="}).
+ Resource type should be 
+one of the following: 
+['noop', 'folder', 'file']
+Traceback (most recent 
+call last):
+  File "C:\Users\bhumeshjy
+othi\Desktop\neurolens ai\
+venv\Lib\site-packages\job
+lib\externals\loky\backend
+\resource_tracker.py", 
+line 297, in main
+    raise ValueError(
+    ...<4 lines>...
+    )
+ValueError: Cannot 
+register "REGISTER","rtype
+":"folder","base64_name" 
+for automatic cleanup: 
+unknown resource type ("Qz
+pcVXNlcnNcQkhVTUVTfjFcQXBw
+RGF0YVxMb2NhbFxUZW1wXGpvYm
+xpYl9tZW1tYXBwaW5nX2ZvbGRl
+cl8yMzUyMF81OTFlNDNmMWNlM2
+U0ZGY3YmEwZmI1YWQ5ZjI5ZDg4
+Y183NDU5N2EzMzFiMTU0ZGViYj
+NjNDAwNTI4YjRjMTUyNA=="}).
+ Resource type should be 
+one of the following: 
+['noop', 'folder', 'file']
+Traceback (most recent 
+call last):
+  File "C:\Users\bhumeshjy
+othi\Desktop\neurolens ai\
+venv\Lib\site-packages\job
+lib\externals\loky\backend
+\resource_tracker.py", 
+line 297, in main
+    raise ValueError(
+    ...<4 lines>...
+    )
+ValueError: Cannot 
+register "REGISTER","rtype
+":"folder","base64_name" 
+for automatic cleanup: 
+unknown resource type ("Qz
+pcVXNlcnNcQkhVTUVTfjFcQXBw
+RGF0YVxMb2NhbFxUZW1wXGpvYm
+xpYl9tZW1tYXBwaW5nX2ZvbGRl
+cl8yMzUyMF82ZGQxMjYyZGRjZD
+E0ZjA5OTQ1YmZiYzY1ZDJmOTJi
+NF8zN2YxZDQ2YzYwNzg0Y2M1YW
+UzNDU2ODM4NGY3MDY4ZA=="}).
+ Resource type should be 
+one of the following: 
+['noop', 'folder', 'file']
+Traceback (most recent 
+call last):
+  File "C:\Users\bhumeshjy
+othi\Desktop\neurolens ai\
+venv\Lib\site-packages\job
+lib\externals\loky\backend
+\resource_tracker.py", 
+line 297, in main
+    raise ValueError(
+    ...<4 lines>...
+    )
+ValueError: Cannot 
+register "REGISTER","rtype
+":"folder","base64_name" 
+for automatic cleanup: 
+unknown resource type ("Qz
+pcVXNlcnNcQkhVTUVTfjFcQXBw
+RGF0YVxMb2NhbFxUZW1wXGpvYm
+xpYl9tZW1tYXBwaW5nX2ZvbGRl
+cl8yMzUyMF81OTFlNDNmMWNlM2
+U0ZGY3YmEwZmI1YWQ5ZjI5ZDg4
+Y19iYWVkMGY2ZDJkZmE0YTU2Yj
+M0OTJiZmE1YmNmNDZlNA=="}).
+ Resource type should be 
+one of the following: 
+['noop', 'folder', 'file']
+Traceback (most recent 
+call last):
+============================================================
+  NeuroLens AI -- Fatigue Detection ML Pipeline
+  2026-04-03 20:09:16
+============================================================
+
+[1/5] Generating synthetic dataset (30 users ├ù 25 windows)...
+      Generated 750 samples | Features: 24
+      Class distribution:
+        NORMAL    :  300 (40.0%)
+        ELEVATED  :  270 (36.0%)
+        HIGH      :  180 (24.0%)
+
+[2/5] Splitting: 80% train / 20% test (stratified)...
+      Train: 600 samples | Test: 150 samples
+
+[3/5] Training & cross-validating 4 models (5-fold CV)...
+
+Model Selection (CV F1-macro):
+  random_forest              F1=0.9869 ┬▒ 0.0075 ΓåÉ SELECTED
+  svm                        F1=0.9868 ┬▒ 0.0099
+  logistic_regression        F1=0.9810 ┬▒ 0.0103
+  knn                        F1=0.9669 ┬▒ 0.0126
+
+  Best model: random_forest
+
+[4/5] Evaluating on held-out test set...
+
+  Test Set Results:
+    Accuracy:      0.9733
+    F1-macro:      0.9713  Γ£à >= 0.70 target
+    AUC (OvR):     0.9992  Γ£à >= 0.80 target
+    Cohen's kappa: 0.9593
+
+  Per-class F1:
+    NORMAL    : 0.9916
+    ELEVATED  : 0.9623
+    HIGH      : 0.9600
+
+  Classification Report:
+              precision    recall  f1-score   support
+
+      NORMAL       1.00      0.98      0.99        60
+    ELEVATED       0.98      0.94      0.96        54
+        HIGH       0.92      1.00      0.96        36
+
+    accuracy                           0.97       150
+   macro avg       0.97      0.98      0.97       150
+weighted avg       0.97      0.97      0.97       150
+
+
+[5/5] Saving model artifact...
+Model saved to C:\Users\bhumeshjyothi\Desktop\neurolens ai\ml\models\neurolens_model.pkl
+  Evaluation report: C:\Users\bhumeshjyothi\Desktop\neurolens ai\ml\evaluation\report.json
+
+============================================================
+  Training complete!
+  Model: C:\Users\bhumeshjyothi\Desktop\neurolens ai\ml\models\neurolens_model.pkl
+============================================================
+  File "C:\Users\bhumeshjy
+othi\Desktop\neurolens ai\
+venv\Lib\site-packages\job
+lib\externals\loky\backend
+\resource_tracker.py", 
+line 297, in main
+    raise ValueError(
+    ...<4 lines>...
+    )
+ValueError: Cannot 
+register "UNREGISTER","rty
+pe":"folder","base64_name"
+ for automatic cleanup: 
+unknown resource type ("Qz
+pcVXNlcnNcQkhVTUVTfjFcQXBw
+RGF0YVxMb2NhbFxUZW1wXGpvYm
+xpYl9tZW1tYXBwaW5nX2ZvbGRl
+cl8yMzUyMF81OTFlNDNmMWNlM2
+U0ZGY3YmEwZmI1YWQ5ZjI5ZDg4
+Y19iYWVkMGY2ZDJkZmE0YTU2Yj
+M0OTJiZmE1YmNmNDZlNA=="}).
+ Resource type should be 
+one of the following: 
+['noop', 'folder', 'file']
+Traceback (most recent 
+call last):
+  File "C:\Users\bhumeshjy
+othi\Desktop\neurolens ai\
+venv\Lib\site-packages\job
+lib\externals\loky\backend
+\resource_tracker.py", 
+line 297, in main
+    raise ValueError(
+    ...<4 lines>...
+    )
+ValueError: Cannot 
+register "UNREGISTER","rty
+pe":"folder","base64_name"
+ for automatic cleanup: 
+unknown resource type ("Qz
+pcVXNlcnNcQkhVTUVTfjFcQXBw
+RGF0YVxMb2NhbFxUZW1wXGpvYm
+xpYl9tZW1tYXBwaW5nX2ZvbGRl
+cl8yMzUyMF82ZGQxMjYyZGRjZD
+E0ZjA5OTQ1YmZiYzY1ZDJmOTJi
+NF8zN2YxZDQ2YzYwNzg0Y2M1YW
+UzNDU2ODM4NGY3MDY4ZA=="}).
+ Resource type should be 
+one of the following: 
+['noop', 'folder', 'file']
+Traceback (most recent 
+call last):
+  File "C:\Users\bhumeshjy
+othi\Desktop\neurolens ai\
+venv\Lib\site-packages\job
+lib\externals\loky\backend
+\resource_tracker.py", 
+line 297, in main
+    raise ValueError(
+    ...<4 lines>...
+    )
+ValueError: Cannot 
+register "UNREGISTER","rty
+pe":"folder","base64_name"
+ for automatic cleanup: 
+unknown resource type ("Qz
+pcVXNlcnNcQkhVTUVTfjFcQXBw
+RGF0YVxMb2NhbFxUZW1wXGpvYm
+xpYl9tZW1tYXBwaW5nX2ZvbGRl
+cl8yMzUyMF81OTFlNDNmMWNlM2
+U0ZGY3YmEwZmI1YWQ5ZjI5ZDg4
+Y183NDU5N2EzMzFiMTU0ZGViYj
+NjNDAwNTI4YjRjMTUyNA=="}).
+ Resource type should be 
+one of the following: 
+['noop', 'folder', 'file']
+Traceback (most recent 
+call last):
+  File "C:\Users\bhumeshjy
+othi\Desktop\neurolens ai\
+venv\Lib\site-packages\job
+lib\externals\loky\backend
+\resource_tracker.py", 
+line 297, in main
+    raise ValueError(
+    ...<4 lines>...
+    )
+ValueError: Cannot 
+register "UNREGISTER","rty
+pe":"folder","base64_name"
+ for automatic cleanup: 
+unknown resource type ("Qz
+pcVXNlcnNcQkhVTUVTfjFcQXBw
+RGF0YVxMb2NhbFxUZW1wXGpvYm
+xpYl9tZW1tYXBwaW5nX2ZvbGRl
+cl8yMzUyMF9iMTUyOTUxNjM1Nj
+c0NDczODI0MTg0NTEyNmQzMDQz
+Yl81NWRjMGVjZWFlNzM0YmI0Yj
+djOGU5ZTA4N2IxNDFjYg=="}).
+ Resource type should be 
+one of the following: 
+['noop', 'folder', 'file']
+Traceback (most recent 
+call last):
+  File "C:\Users\bhumeshjy
+othi\Desktop\neurolens ai\
+venv\Lib\site-packages\job
+lib\externals\loky\backend
+\resource_tracker.py", 
+line 297, in main
+    raise ValueError(
+    ...<4 lines>...
+    )
+ValueError: Cannot 
+register "UNREGISTER","rty
+pe":"folder","base64_name"
+ for automatic cleanup: 
+unknown resource type ("Qz
+pcVXNlcnNcQkhVTUVTfjFcQXBw
+RGF0YVxMb2NhbFxUZW1wXGpvYm
+xpYl9tZW1tYXBwaW5nX2ZvbGRl
+cl8yMzUyMF81OTFlNDNmMWNlM2
+U0ZGY3YmEwZmI1YWQ5ZjI5ZDg4
+Y19kYjM1YjM4ZTYyNzQ0N2Y1OT
+ExNjhkZDFiYjY3ZGEzNg=="}).
+ Resource type should be 
+one of the following: 
+['noop', 'folder', 'file']
+Traceback (most recent 
+call last):
+  File "C:\Users\bhumeshjy
+othi\Desktop\neurolens ai\
+venv\Lib\site-packages\job
+lib\externals\loky\backend
+\resource_tracker.py", 
+line 297, in main
+    raise ValueError(
+    ...<4 lines>...
+    )
+ValueError: Cannot 
+register "UNREGISTER","rty
+pe":"folder","base64_name"
+ for automatic cleanup: 
+unknown resource type ("Qz
+pcVXNlcnNcQkhVTUVTfjFcQXBw
+RGF0YVxMb2NhbFxUZW1wXGpvYm
+xpYl9tZW1tYXBwaW5nX2ZvbGRl
+cl8yMzUyMF9mZDk3NGYxNGNhMj
+U0YzJlYTMzNWNlYzIxYjI0MTNi
+Nl84ZDI0OTEwYTZlYWI0MGUyYj
+Q2NjNiOGU2MzdlZDVmOQ=="}).
+ Resource type should be 
+one of the following: 
+['noop', 'folder', 'file']
+Traceback (most recent 
+call last):
+  File "C:\Users\bhumeshjy
+othi\Desktop\neurolens ai\
+venv\Lib\site-packages\job
+lib\externals\loky\backend
+\resource_tracker.py", 
+line 297, in main
+    raise ValueError(
+    ...<4 lines>...
+    )
+ValueError: Cannot 
+register "UNREGISTER","rty
+pe":"folder","base64_name"
+ for automatic cleanup: 
+unknown resource type ("Qz
+pcVXNlcnNcQkhVTUVTfjFcQXBw
+RGF0YVxMb2NhbFxUZW1wXGpvYm
+xpYl9tZW1tYXBwaW5nX2ZvbGRl
+cl8yMzUyMF81OTFlNDNmMWNlM2
+U0ZGY3YmEwZmI1YWQ5ZjI5ZDg4
+Y183ZGI3YTBhYjc3ZjA0MDY5OD
+k5YjUwMzJlMjY0ZjZlNg=="}).
+ Resource type should be 
+one of the following: 
+['noop', 'folder', 'file']
+Traceback (most recent 
+call last):
+  File "C:\Users\bhumeshjy
+othi\Desktop\neurolens ai\
+venv\Lib\site-packages\job
+lib\externals\loky\backend
+\resource_tracker.py", 
+line 297, in main
+    raise ValueError(
+    ...<4 lines>...
+    )
+ValueError: Cannot 
+register "UNREGISTER","rty
+pe":"folder","base64_name"
+ for automatic cleanup: 
+unknown resource type ("Qz
+pcVXNlcnNcQkhVTUVTfjFcQXBw
+RGF0YVxMb2NhbFxUZW1wXGpvYm
+xpYl9tZW1tYXBwaW5nX2ZvbGRl
+cl8yMzUyMF81OTFlNDNmMWNlM2
+U0ZGY3YmEwZmI1YWQ5ZjI5ZDg4
+Y184MzAzOThlOTQ4MDA0NjU4YW
+IwZTkwMzI2Zjc1MWJhMA=="}).
+ Resource type should be 
+one of the following: 
+['noop', 'folder', 'file']
