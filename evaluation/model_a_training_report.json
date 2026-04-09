@@ -1,0 +1,281 @@
+{
+  "engineered_dataset_shape": {
+    "rows": 1336947,
+    "columns": 59
+  },
+  "labeled_windows": {
+    "fatigue": 963653,
+    "load": 963653
+  },
+  "unique_users": 77,
+  "outputs": {
+    "feature_windows_csv_gz": "C:\\Users\\bhumeshjyothi\\Desktop\\neurolens ai\\data\\processed\\model_a_feature_windows.csv.gz",
+    "fatigue_model_json": "C:\\Users\\bhumeshjyothi\\Desktop\\neurolens ai\\models\\model_a_fatigue_xgboost.json",
+    "load_model_json": "C:\\Users\\bhumeshjyothi\\Desktop\\neurolens ai\\models\\model_a_load_xgboost.json",
+    "bundle_pickle": "C:\\Users\\bhumeshjyothi\\Desktop\\neurolens ai\\models\\model_a_realtime_cognitive_model.pkl"
+  },
+  "fatigue_model": {
+    "auc": 0.488523,
+    "f1": 0.31381,
+    "confusion_matrix": [
+      [
+        73603,
+        45634
+      ],
+      [
+        26337,
+        16457
+      ]
+    ],
+    "top_features": [
+      {
+        "feature": "z_seconds_in_focus_apps",
+        "importance": 0.127822
+      },
+      {
+        "feature": "seconds_in_entertainment_apps",
+        "importance": 0.127769
+      },
+      {
+        "feature": "avg_focus_duration_on_app",
+        "importance": 0.077397
+      },
+      {
+        "feature": "z_short_video_seconds",
+        "importance": 0.063515
+      },
+      {
+        "feature": "day_of_week_sin",
+        "importance": 0.061879
+      },
+      {
+        "feature": "z_seconds_in_entertainment_apps",
+        "importance": 0.060515
+      },
+      {
+        "feature": "current_session_length_min",
+        "importance": 0.047449
+      },
+      {
+        "feature": "day_of_week_cos",
+        "importance": 0.044807
+      },
+      {
+        "feature": "hours_since_work_start",
+        "importance": 0.044323
+      },
+      {
+        "feature": "time_of_day_sin",
+        "importance": 0.04245
+      }
+    ],
+    "train_rows": 801622,
+    "test_rows": 162031,
+    "train_users": 20,
+    "test_users": 6,
+    "sample_predictions": [
+      {
+        "user_id": "P04",
+        "window_end": "2023-03-22T10:46:00",
+        "true_label": 0,
+        "predicted_label": 0,
+        "probability": 0.429009
+      },
+      {
+        "user_id": "P04",
+        "window_end": "2023-03-22T10:47:00",
+        "true_label": 0,
+        "predicted_label": 0,
+        "probability": 0.426722
+      },
+      {
+        "user_id": "P04",
+        "window_end": "2023-03-22T10:48:00",
+        "true_label": 0,
+        "predicted_label": 0,
+        "probability": 0.421652
+      },
+      {
+        "user_id": "P04",
+        "window_end": "2023-03-22T10:49:00",
+        "true_label": 0,
+        "predicted_label": 0,
+        "probability": 0.363196
+      },
+      {
+        "user_id": "P04",
+        "window_end": "2023-03-22T10:50:00",
+        "true_label": 0,
+        "predicted_label": 0,
+        "probability": 0.301631
+      },
+      {
+        "user_id": "P04",
+        "window_end": "2023-03-22T10:51:00",
+        "true_label": 0,
+        "predicted_label": 0,
+        "probability": 0.382355
+      },
+      {
+        "user_id": "P04",
+        "window_end": "2023-03-22T10:52:00",
+        "true_label": 0,
+        "predicted_label": 0,
+        "probability": 0.195517
+      },
+      {
+        "user_id": "P04",
+        "window_end": "2023-03-22T10:53:00",
+        "true_label": 0,
+        "predicted_label": 0,
+        "probability": 0.208045
+      },
+      {
+        "user_id": "P04",
+        "window_end": "2023-03-22T10:54:00",
+        "true_label": 0,
+        "predicted_label": 0,
+        "probability": 0.195517
+      },
+      {
+        "user_id": "P04",
+        "window_end": "2023-03-22T10:55:00",
+        "true_label": 0,
+        "predicted_label": 0,
+        "probability": 0.208045
+      }
+    ]
+  },
+  "load_model": {
+    "auc": 0.474336,
+    "f1": 0.277031,
+    "confusion_matrix": [
+      [
+        98144,
+        52420
+      ],
+      [
+        31367,
+        16053
+      ]
+    ],
+    "top_features": [
+      {
+        "feature": "z_seconds_in_focus_apps",
+        "importance": 0.132975
+      },
+      {
+        "feature": "avg_focus_duration_on_app",
+        "importance": 0.091229
+      },
+      {
+        "feature": "idle_ratio",
+        "importance": 0.060445
+      },
+      {
+        "feature": "current_session_length_min",
+        "importance": 0.055845
+      },
+      {
+        "feature": "z_short_video_seconds",
+        "importance": 0.053758
+      },
+      {
+        "feature": "hours_since_work_start",
+        "importance": 0.050789
+      },
+      {
+        "feature": "day_of_week_sin",
+        "importance": 0.046796
+      },
+      {
+        "feature": "z_current_session_length_min",
+        "importance": 0.045354
+      },
+      {
+        "feature": "day_of_week_cos",
+        "importance": 0.042138
+      },
+      {
+        "feature": "z_seconds_in_entertainment_apps",
+        "importance": 0.041125
+      }
+    ],
+    "train_rows": 765669,
+    "test_rows": 197984,
+    "train_users": 21,
+    "test_users": 5,
+    "sample_predictions": [
+      {
+        "user_id": "P03",
+        "window_end": "2023-03-22T02:51:00",
+        "true_label": 0,
+        "predicted_label": 0,
+        "probability": 0.343218
+      },
+      {
+        "user_id": "P03",
+        "window_end": "2023-03-22T02:52:00",
+        "true_label": 0,
+        "predicted_label": 0,
+        "probability": 0.338038
+      },
+      {
+        "user_id": "P03",
+        "window_end": "2023-03-22T02:53:00",
+        "true_label": 0,
+        "predicted_label": 0,
+        "probability": 0.335299
+      },
+      {
+        "user_id": "P03",
+        "window_end": "2023-03-22T02:54:00",
+        "true_label": 0,
+        "predicted_label": 0,
+        "probability": 0.349729
+      },
+      {
+        "user_id": "P03",
+        "window_end": "2023-03-22T02:55:00",
+        "true_label": 0,
+        "predicted_label": 0,
+        "probability": 0.355074
+      },
+      {
+        "user_id": "P03",
+        "window_end": "2023-03-22T02:56:00",
+        "true_label": 0,
+        "predicted_label": 0,
+        "probability": 0.358873
+      },
+      {
+        "user_id": "P03",
+        "window_end": "2023-03-22T02:57:00",
+        "true_label": 0,
+        "predicted_label": 0,
+        "probability": 0.342526
+      },
+      {
+        "user_id": "P03",
+        "window_end": "2023-03-22T02:58:00",
+        "true_label": 0,
+        "predicted_label": 0,
+        "probability": 0.358873
+      },
+      {
+        "user_id": "P03",
+        "window_end": "2023-03-22T02:59:00",
+        "true_label": 0,
+        "predicted_label": 0,
+        "probability": 0.342526
+      },
+      {
+        "user_id": "P03",
+        "window_end": "2023-03-22T03:00:00",
+        "true_label": 0,
+        "predicted_label": 0,
+        "probability": 0.333132
+      }
+    ]
+  }
+}

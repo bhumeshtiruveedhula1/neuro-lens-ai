@@ -1,0 +1,140 @@
+{
+  "created_at": "2026-04-08T20:45:12.245993+00:00",
+  "dataset_shape": {
+    "rows": 23760,
+    "columns": 35
+  },
+  "feature_list": [
+    "typing_speed",
+    "inter_key_latency_mean",
+    "inter_key_latency_std",
+    "hold_time_mean",
+    "error_rate",
+    "error_burstiness",
+    "switches_per_minute",
+    "app_usage_per_minute",
+    "idle_ratio",
+    "session_duration_min",
+    "time_since_last_break",
+    "cumulative_work_time",
+    "fatigue_accumulation_index",
+    "typing_speed_trend",
+    "error_rate_trend",
+    "switching_trend",
+    "hour_of_day_sin",
+    "hour_of_day_cos",
+    "day_of_week_sin",
+    "day_of_week_cos",
+    "z_typing_speed",
+    "z_inter_key_latency_mean",
+    "z_error_rate",
+    "z_switches_per_minute",
+    "z_idle_ratio",
+    "z_session_duration_min",
+    "z_fatigue_accumulation_index"
+  ],
+  "normalization_strategy": "Per-user rolling z-scores on primary behavioral and cognitive features; raw features kept in natural units for explainability.",
+  "metrics": {
+    "auc": 0.898824,
+    "f1": 0.816182,
+    "confusion_matrix": [
+      [
+        2411,
+        432
+      ],
+      [
+        295,
+        1614
+      ]
+    ],
+    "regression_mae": 2.344525,
+    "regression_rmse": 2.947174
+  },
+  "feature_importance": [
+    {
+      "feature": "session_duration_min",
+      "importance": 0.492758
+    },
+    {
+      "feature": "idle_ratio",
+      "importance": 0.20333
+    },
+    {
+      "feature": "error_rate",
+      "importance": 0.147582
+    },
+    {
+      "feature": "fatigue_accumulation_index",
+      "importance": 0.02635
+    },
+    {
+      "feature": "inter_key_latency_mean",
+      "importance": 0.011595
+    },
+    {
+      "feature": "switches_per_minute",
+      "importance": 0.007191
+    },
+    {
+      "feature": "inter_key_latency_std",
+      "importance": 0.006586
+    },
+    {
+      "feature": "z_idle_ratio",
+      "importance": 0.00657
+    },
+    {
+      "feature": "error_burstiness",
+      "importance": 0.006048
+    },
+    {
+      "feature": "z_inter_key_latency_mean",
+      "importance": 0.005818
+    },
+    {
+      "feature": "cumulative_work_time",
+      "importance": 0.005753
+    },
+    {
+      "feature": "z_switches_per_minute",
+      "importance": 0.005672
+    }
+  ],
+  "disclaimer": "Synthetic prototype for hackathon demonstration only. Not medical advice or validated clinical fatigue detection.",
+  "artifacts": {
+    "synthetic_dataset_csv": "C:\\Users\\bhumeshjyothi\\Desktop\\neurolens ai\\data\\synthetic_dataset.csv",
+    "model_json": "C:\\Users\\bhumeshjyothi\\Desktop\\neurolens ai\\models\\model.json",
+    "training_report_json": "C:\\Users\\bhumeshjyothi\\Desktop\\neurolens ai\\evaluation\\training_report.json",
+    "classifier_model_json": "C:\\Users\\bhumeshjyothi\\Desktop\\neurolens ai\\models\\fatigue_classifier.json",
+    "regressor_model_json": "C:\\Users\\bhumeshjyothi\\Desktop\\neurolens ai\\models\\fatigue_regressor.json"
+  },
+  "simulation_config": {
+    "users": 180,
+    "sessions_per_user": 6,
+    "windows_per_session": 22,
+    "window_minutes": 5,
+    "seed": 42
+  },
+  "split": {
+    "train_rows": 19008,
+    "test_rows": 4752,
+    "train_users": 144,
+    "test_users": 36
+  },
+  "sample_prediction": {
+    "input_window_user_id": "sim_user_004",
+    "input_window_timestamp": "2026-01-08T10:25:00+00:00",
+    "true_fatigue_score": 10.49,
+    "true_fatigue_label": 0,
+    "prediction": {
+      "fatigue_score": 13.02,
+      "fatigue_label": 0,
+      "top_3_reasons": [
+        "the current session has run long",
+        "idle time is elevated",
+        "error rate is elevated"
+      ],
+      "fatigue_probability": 0.077247
+    }
+  }
+}

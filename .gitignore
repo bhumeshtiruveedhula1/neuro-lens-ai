@@ -1,0 +1,44 @@
+# ── Python ──
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+*.egg-info/
+
+# ── Node ──
+node_modules/
+frontend/neurolens-app/dist/
+
+# ── Data (large files) ──
+data/
+*.csv
+*.tsv
+*.db
+*.sqlite
+*.pkl
+*.gz
+*.tar
+*.zip
+
+# ── ML model weights (large) ──
+*.h5
+*.pt
+*.onnx
+
+# ── Environment ──
+.env
+.env.local
+
+# ── OS ──
+.DS_Store
+Thumbs.db
+
+# ── IDE ──
+.vscode/
+.idea/
+
+# ── Test artifacts ──
+test_results.txt
+train_output.txt
+processed_dataset.csv

@@ -1,0 +1,146 @@
+{
+  "fatigue_model": [
+    {
+      "user_id": "P04",
+      "window_end": "2023-03-22T10:46:00",
+      "true_label": 0,
+      "predicted_label": 0,
+      "probability": 0.429009
+    },
+    {
+      "user_id": "P04",
+      "window_end": "2023-03-22T10:47:00",
+      "true_label": 0,
+      "predicted_label": 0,
+      "probability": 0.426722
+    },
+    {
+      "user_id": "P04",
+      "window_end": "2023-03-22T10:48:00",
+      "true_label": 0,
+      "predicted_label": 0,
+      "probability": 0.421652
+    },
+    {
+      "user_id": "P04",
+      "window_end": "2023-03-22T10:49:00",
+      "true_label": 0,
+      "predicted_label": 0,
+      "probability": 0.363196
+    },
+    {
+      "user_id": "P04",
+      "window_end": "2023-03-22T10:50:00",
+      "true_label": 0,
+      "predicted_label": 0,
+      "probability": 0.301631
+    },
+    {
+      "user_id": "P04",
+      "window_end": "2023-03-22T10:51:00",
+      "true_label": 0,
+      "predicted_label": 0,
+      "probability": 0.382355
+    },
+    {
+      "user_id": "P04",
+      "window_end": "2023-03-22T10:52:00",
+      "true_label": 0,
+      "predicted_label": 0,
+      "probability": 0.195517
+    },
+    {
+      "user_id": "P04",
+      "window_end": "2023-03-22T10:53:00",
+      "true_label": 0,
+      "predicted_label": 0,
+      "probability": 0.208045
+    },
+    {
+      "user_id": "P04",
+      "window_end": "2023-03-22T10:54:00",
+      "true_label": 0,
+      "predicted_label": 0,
+      "probability": 0.195517
+    },
+    {
+      "user_id": "P04",
+      "window_end": "2023-03-22T10:55:00",
+      "true_label": 0,
+      "predicted_label": 0,
+      "probability": 0.208045
+    }
+  ],
+  "load_model": [
+    {
+      "user_id": "P03",
+      "window_end": "2023-03-22T02:51:00",
+      "true_label": 0,
+      "predicted_label": 0,
+      "probability": 0.343218
+    },
+    {
+      "user_id": "P03",
+      "window_end": "2023-03-22T02:52:00",
+      "true_label": 0,
+      "predicted_label": 0,
+      "probability": 0.338038
+    },
+    {
+      "user_id": "P03",
+      "window_end": "2023-03-22T02:53:00",
+      "true_label": 0,
+      "predicted_label": 0,
+      "probability": 0.335299
+    },
+    {
+      "user_id": "P03",
+      "window_end": "2023-03-22T02:54:00",
+      "true_label": 0,
+      "predicted_label": 0,
+      "probability": 0.349729
+    },
+    {
+      "user_id": "P03",
+      "window_end": "2023-03-22T02:55:00",
+      "true_label": 0,
+      "predicted_label": 0,
+      "probability": 0.355074
+    },
+    {
+      "user_id": "P03",
+      "window_end": "2023-03-22T02:56:00",
+      "true_label": 0,
+      "predicted_label": 0,
+      "probability": 0.358873
+    },
+    {
+      "user_id": "P03",
+      "window_end": "2023-03-22T02:57:00",
+      "true_label": 0,
+      "predicted_label": 0,
+      "probability": 0.342526
+    },
+    {
+      "user_id": "P03",
+      "window_end": "2023-03-22T02:58:00",
+      "true_label": 0,
+      "predicted_label": 0,
+      "probability": 0.358873
+    },
+    {
+      "user_id": "P03",
+      "window_end": "2023-03-22T02:59:00",
+      "true_label": 0,
+      "predicted_label": 0,
+      "probability": 0.342526
+    },
+    {
+      "user_id": "P03",
+      "window_end": "2023-03-22T03:00:00",
+      "true_label": 0,
+      "predicted_label": 0,
+      "probability": 0.333132
+    }
+  ]
+}

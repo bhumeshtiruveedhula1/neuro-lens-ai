@@ -1,0 +1,156 @@
+{
+  "trained_at": "2026-04-08T19:26:14.249443+00:00",
+  "feature_source": "deepstress",
+  "window_minutes": 30,
+  "feature_columns": [
+    "z_switches_per_minute",
+    "z_app_usage_per_minute",
+    "z_idle_ratio",
+    "z_session_duration_min",
+    "hour_sin",
+    "hour_cos",
+    "day_of_week_sin",
+    "day_of_week_cos"
+  ],
+  "engineered_dataset_shape": {
+    "rows": 11131,
+    "columns": 20
+  },
+  "class_balance": {
+    "fatigue_rate": 0.259725,
+    "label_counts": {
+      "0": 8240,
+      "1": 2891
+    }
+  },
+  "model": {
+    "auc": 0.540031,
+    "f1": 0.39322,
+    "threshold": 0.48,
+    "confusion_matrix": [
+      [
+        688,
+        865
+      ],
+      [
+        209,
+        348
+      ]
+    ],
+    "top_features": [
+      {
+        "feature": "day_of_week_sin",
+        "importance": 0.18089
+      },
+      {
+        "feature": "hour_cos",
+        "importance": 0.133412
+      },
+      {
+        "feature": "z_idle_ratio",
+        "importance": 0.125092
+      },
+      {
+        "feature": "z_switches_per_minute",
+        "importance": 0.116859
+      },
+      {
+        "feature": "z_session_duration_min",
+        "importance": 0.114879
+      },
+      {
+        "feature": "hour_sin",
+        "importance": 0.112964
+      },
+      {
+        "feature": "z_app_usage_per_minute",
+        "importance": 0.111411
+      },
+      {
+        "feature": "day_of_week_cos",
+        "importance": 0.104494
+      }
+    ],
+    "train_rows": 9021,
+    "test_rows": 2110,
+    "train_users": 19,
+    "test_users": 5,
+    "sample_predictions": [
+      {
+        "user_id": "P03",
+        "window_end": "2023-03-22T03:01:08.041000",
+        "true_label": 0,
+        "predicted_label": 1,
+        "probability": 0.523542
+      },
+      {
+        "user_id": "P03",
+        "window_end": "2023-03-22T03:39:39.550000",
+        "true_label": 0,
+        "predicted_label": 1,
+        "probability": 0.525483
+      },
+      {
+        "user_id": "P03",
+        "window_end": "2023-03-22T04:21:58.291000",
+        "true_label": 1,
+        "predicted_label": 1,
+        "probability": 0.525483
+      },
+      {
+        "user_id": "P03",
+        "window_end": "2023-03-22T04:57:24.651000",
+        "true_label": 1,
+        "predicted_label": 1,
+        "probability": 0.532026
+      },
+      {
+        "user_id": "P03",
+        "window_end": "2023-03-22T05:48:42.174000",
+        "true_label": 1,
+        "predicted_label": 1,
+        "probability": 0.537092
+      },
+      {
+        "user_id": "P03",
+        "window_end": "2023-03-22T06:19:03.048000",
+        "true_label": 0,
+        "predicted_label": 1,
+        "probability": 0.52939
+      },
+      {
+        "user_id": "P03",
+        "window_end": "2023-03-22T06:58:54.919000",
+        "true_label": 0,
+        "predicted_label": 1,
+        "probability": 0.490548
+      },
+      {
+        "user_id": "P03",
+        "window_end": "2023-03-22T08:12:35.470000",
+        "true_label": 0,
+        "predicted_label": 1,
+        "probability": 0.491218
+      },
+      {
+        "user_id": "P03",
+        "window_end": "2023-03-22T09:26:14.181000",
+        "true_label": 0,
+        "predicted_label": 1,
+        "probability": 0.480255
+      },
+      {
+        "user_id": "P03",
+        "window_end": "2023-03-22T09:57:55.867000",
+        "true_label": 0,
+        "predicted_label": 1,
+        "probability": 0.513226
+      }
+    ]
+  },
+  "artifacts": {
+    "dataset_csv": "C:\\Users\\bhumeshjyothi\\Desktop\\neurolens ai\\data\\processed\\model_a_deepstress_fatigue_dataset.csv",
+    "model_json": "C:\\Users\\bhumeshjyothi\\Desktop\\neurolens ai\\models\\model_a_deepstress_fatigue_xgboost.json",
+    "report_json": "C:\\Users\\bhumeshjyothi\\Desktop\\neurolens ai\\evaluation\\model_a_deepstress_fatigue_report.json"
+  }
+}
